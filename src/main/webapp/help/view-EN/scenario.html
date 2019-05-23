@@ -1,0 +1,113 @@
+
+<!-- Page -->
+
+    <div class="page-header p-t-10 p-b-10">
+        <!--<h1 class="page-title">Page Title</h1>-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">EagleTest</li>
+            <li class="breadcrumb-item"><a href="help.html">Documentation</a></li>
+            <li class="breadcrumb-item active">2.1 Scenario</li>
+        </ol>
+    </div>
+    <div class="page-content">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+            <div class="col-lg-12 col-xxl-9 col-xs-12">
+                <div id="teamCompletedWidget" class="card card-shadow example-responsive">
+                    <div class="card-block p-x-100 p-y-20">
+                        <h3 class="title">2.1 Scenario</h3>
+                        <p class="paragraph">The system provides one-stop completion of functional testing, compatibility testing, reliability testing and other services, the typical scenarios include: project creation, project maintenance, task execution and view, and remote test. Each scene consists of one or more business operations, which are implemented and executed by different user roles.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/scenario_1.jpg">
+                            <p class="imgname">Typical Business Scenario</p>
+                        </div>
+                        <p class="paragraph">(1) User roles and Identities</p>
+                        <p class="paragraph">The administrator has permission to operate operations A and B, and staffs do not have this permission. The administrator adds the system user through A, and then associates the project manager with the project when B adds the item. The project manager adds and edits the project manager and members through C. Refer to Section "Permissions" for details.</p>
+                        <p class="paragraph">(2) Scenarios and Operations</p>
+                        <div class="example table-responsive">
+                            <table class="table table-striped table-bordered" data-plugin="floatThead">
+                                <thead>
+                                <tr>
+                                    <th>Scenario</th>
+                                    <th>Operation</th>
+                                    <th>Preconditions</th>
+                                    <th>User Role/Identity</th>
+                                    <th>Result</th>
+                                </tr>
+                                </thead>
+                                <tbody aria-relevant="all" aria-live="polite">
+                                <tr class="odd">
+                                    <td rowspan="2" style="text-align: center; vertical-align: middle" >Create Project</td>
+                                    <td><h5>A Users</h5></td>
+                                    <td><h5>Administrator login</h5></td>
+                                    <td><h5>Administrator login</h5></td>
+                                    <td><h5>Add new users(Staff  or Administrator);</h5></td>
+                                </tr>
+                                <tr class="even">
+                                    <td><h5>B Projects</h5></td>
+                                    <td><h5>Administrator login</h5></td>
+                                    <td><h5>Administrator</h5></td>
+                                    <td><h5>Create new projects;Assign a Project Manager;
+                                    </h5></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td rowspan="3" style="text-align: center; vertical-align: middle">Maintain Project</td>
+                                    <td><h5>C Members</h5></td>
+                                    <td><h5>A, B</h5></td>
+                                    <td><h5>Project Manager</h5></td>
+                                    <td><h5>Add/Edit  Project  Manager and Member;</h5></td>
+                                </tr>
+                                <tr class="even">
+
+                                    <td><h5>D Versions</h5></td>
+                                    <td><h5>A, B, C</h5></td>
+                                    <td><h5>Project Manager; Project Member;
+                                    </h5></td>
+                                    <td><h5>Create and maintain versions to upload builds;</h5></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><h5>E Builds</h5></td>
+                                    <td><h5>C, D</h5></td>
+                                    <td><h5>Project Manager; Project Member;
+                                    </h5></td>
+                                    <td><h5>Create and maintain builds to test;</h5></td>
+                                </tr>
+                                <tr class="even">
+                                    <td rowspan="2" style="text-align: center; vertical-align: middle">Task to Run/Review</td>
+                                    <td><h5>F Create Task</h5></td>
+                                    <td><h5>D, E</h5></td>
+                                    <td><h5>Project Manager; Project Member;
+                                    </h5></td>
+                                    <td><h5>Using the builds upload by E runs  Compatibility Test, Automated Scrip Test, Traversal Test.</h5></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><h5>G Review Report</h5></td>
+                                    <td><h5>F</h5></td>
+                                    <td><h5>Project Manager; Project Member;
+                                    </h5></td>
+                                    <td><h5>Review the reports and analyze data.</h5></td>
+                                </tr>
+                                <tr class="even">
+                                    <td style="text-align: center; vertical-align: middle">Remote Test</td>
+                                    <td><h5>H Remote Test</h5></td>
+                                    <td><h5>A</h5></td>
+                                    <td><h5>Project Manager; Staff;
+                                    </h5></td>
+                                    <td><h5>Debug the app to reproduction bug. </h5></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="paragraph">(3) Business Logic</p>
+                        <p class="paragraph">Automated test tasks are hierarchical management, from project to version to builde, unified management of the App. In general, corresponding to each App test, you need to create the appropriate project to manage, according to the operation of the App platform, the project category is divided into Android or IOS, as shown below.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/scenario_2.jpg">
+                            <p class="imgname">Task management logic Figure</p>
+                        </div>
+                        <p class="paragraph">The following sections will detail the specific process of each typical business scenario. The user can be easier to refer to complete the corresponding work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page -->

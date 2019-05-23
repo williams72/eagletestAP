@@ -1,0 +1,90 @@
+
+<!-- Page -->
+
+    <div class="page-header p-t-10 p-b-10">
+        <!--<h1 class="page-title">Page Title</h1>-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">锐测盒子</li>
+            <li class="breadcrumb-item"><a href="help.html">帮助文档</a></li>
+            <li class="breadcrumb-item active">1.4.2 任务管理</li>
+        </ol>
+    </div>
+    <div class="page-content">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+            <div class="col-lg-12 col-xxl-9 col-xs-12">
+                <div id="teamCompletedWidget" class="card card-shadow example-responsive">
+                    <div class="card-block p-x-100 p-y-20">
+                        <h3 class="title">1.4.2 任务管理</h3>
+                        <p class="paragraph">任务管理功能提供用户提交自动化测试任务和展示任务执行信息。在此功能中，用户可使用项目中运行包进行手机测试，当测试完成后用户可以查看任务执行结果和设备信息。如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/tasks_management_1.jpg">
+                            <p class="imgname">项目的任务管理页面图</p>
+                        </div>
+                        <h3 class="title">1.4.2.1 创建任务</h3>
+                        <p class="paragraph">用户创建自动化测试任务需要三步骤，包括填写基本信息、选择测试机型和提交任务。</p>
+                        <p class="paragraph_mul"><b class="bold">(1) 填写基本信息</b></p>
+                        <p class="paragraph_mul">用户通过此步骤填写自动化测试任务的基本信息，其中包括任务名称、选择运行包、前处理设置、选择测试类型、设置测试条件。由于项目类型不同，其提供的测试类型也不相同。</p>
+
+                            <div class="imgcenter" >
+                                <img src="../images/img-CN/tasks_management_2.jpg">
+                                <p class="imgname">Android项目的创建任务页面-填写基本信息图</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">a)</b> 前处理设置：允许用户创建任务时设置设备的使用环境，主要提供重启和网络模拟。重启设置是指设备执行测试任务之前重启，恢复设备使用环境，减少因设备长期运行而导致的性能问题；网络模拟提供了四种网络模拟环境(2G,3G,高丢包率和高延迟)，测试不同网络环境下App的运行情况。</p>
+                            <div class="imgcenter" >
+                                <img  src="../images/img-CN/tasks_management_10.jpg">
+                                <p class="imgname">Android项目的前处理设置图</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">b)</b> Android项目中测试类型包括兼容性测试(Monkey、SmartMonkey)、自动化脚本测试(Appium、Robotium和Uiautomator)和遍历测试，如下图所示。</p>
+                            <p class="paragraph_mul_title"><b class="bold">i)兼容测试</b></p>
+                            <p class="paragraph_mul_mul">兼容测试是指在选定机型上对所测试的App进行安装、启动、monkey、卸载等测试过程。它为用户提供测试过程中总体测试报告、截图、安装日志、logcat日志、录像等记录，捕获启动耗时、CPU、内存、流量、电量等性能数据，帮助用户定位错误问题。</p>
+                            <p class="paragraph_mul_mul">兼容测试分为两种兼容，一是普通兼容测试，二是Smart兼容测试。普通兼容测试是在执行monkey的阶段，对所有区域（页面）进行覆盖点击，确保对所有页面所有区域测试。Smart兼容测试是在执行monkey的阶段，对所有可点击区域（页面）进行点击，有效的测试可点击区域。</p>
+                            <P class="paragraph_mul_mul">两种兼容测试可以提高测试覆盖范围，增加兼容测试力度，更加全面的对App进行高效的测试。</P>
+                            <P class="paragraph_mul_mul">用户可以对兼容测试设置测试时长和高级设置(登录用户名和密码)，如下图所示。</P>
+                            <div class="imgcenter" >
+                                <img class="imgbig" src="../images/img-CN/tasks_management_3.jpg">
+                                <p class="imgname">Android项目的创建任务页面-兼容性测试图</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">ii)自动化脚本测试</b></p>
+                            <p class="paragraph_mul_mul">自动化脚本测试提供用户可以通过自定义的脚本文件，对App进行可定制的功能自动化测试。自动化脚本测试提供三种测试框架，包括Appium、Robotium和Uiautomator。为了确保测试的准确性，不同的测试框架需要上传其对应的测试脚本，如图下图所示。</p>
+                            <div class="imgcenter" >
+                                <img src="../images/img-CN/tasks_management_4.jpg">
+                                <p class="imgname">Android项目的创建任务页面-自动化脚本测试图</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">iii)遍历测试</b></p>
+                            <p class="paragraph_mul_mul">遍历测试是指根据一定的原则和规律将页面和控件形成树状结构，按照树状结构，自动遍历App所有原生控件和页面，从而覆盖各种路径分支，遍历全部功能模块，深度发掘bug的存在，增加测试用例的覆盖率。下图为用户设置遍历测试时长的页面。</p>
+                            <div class="imgcenter" >
+                                <img  src="../images/img-CN/tasks_management_5.jpg">
+                                <p class="imgname">Android项目的创建任务页面-遍历测试图</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">c)</b> IOS项目中测试类型包括兼容测试(Monkey)和自动化脚本测试(Appium)，如下图所示。</p>
+                            <div class="imgcenter" >
+                                <img class="imgbig" src="../images/img-CN/tasks_management_6.jpg">
+                                <p class="imgname">IOS项目的创建任务页面-测试类型图</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">i)兼容测试</b></p>
+                            <p class="paragraph_mul_mul">兼容测试是指在选定机型上对所测试的App进行安装、启动、monkey、卸载等测试过程。它为用户提供测试过程中总体测试报告、截图、安装日志、logcat日志、录像等记录，捕获启动耗时、CPU、内存、流量、电量等性能数据，帮助用户定位错误问题。</p>
+                            <p class="paragraph_mul_title"><b class="bold">ii)自动化脚本测试</b></p>
+                            <p class="paragraph_mul_mul">自动化脚本测试提供用户可以通过自定义的脚本文件，对App进行可定制的功能自动化测试。IOS项目中只提供Appium脚本测试框架。</p>
+                        <p class="paragraph_mul"><b class="bold">(2) 选择测试机型</b></p>
+                        <p class="paragraph_mul">用户填写基本测试信息后，需要选择设备机型。在此步骤中，用户可以选择设备库中的设备作为测试任务的载体，执行测试任务。Android项目提供操作系统为Android的设备；IOS项目提供操作系统为IOS的设备。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/tasks_management_7.jpg">
+                            <p class="imgname">Android项目的创建任务页面-选择测试机型图</p>
+                        </div>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/tasks_management_8.jpg">
+                            <p class="imgname">IOS项目的创建任务页面-选择测试机型图</p>
+                        </div>
+                        <p class="paragraph_mul"><b class="bold">(3) 提交任务</b></p>
+                        <p class="paragraph_mul">选择设备机型后，服务器会接收测试任务，返回提交结果。提交成功后，会展示测试任务的基本信息；如果提交失败，系统会提示用户重新提交。下图为提交成功后的页面设计图。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/tasks_management_9.jpg">
+                            <p class="imgname">项目的创建任务页面-提交任务图</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page -->

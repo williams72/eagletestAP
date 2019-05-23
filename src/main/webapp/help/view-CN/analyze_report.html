@@ -1,0 +1,66 @@
+
+<!-- Page -->
+
+    <div class="page-header p-t-10 p-b-10">
+        <!--<h1 class="page-title">Page Title</h1>-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">锐测盒子</li>
+            <li class="breadcrumb-item"><a href="help.html">帮助文档</a></li>
+            <li class="breadcrumb-item active">2.6 测试报告的解析</li>
+        </ol>
+    </div>
+    <div class="page-content">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+            <div class="col-lg-12 col-xxl-9 col-xs-12">
+                <div id="teamCompletedWidget" class="card card-shadow example-responsive">
+                    <div class="card-block p-x-100 p-y-20">
+                        <h3 class="title">2.6 测试报告的解析</h3>
+                        <p class="paragraph">测试报告是对一个任务的测试结果进行统计和分析，为用户提供所测试运行包的综合评价。对于自动化测试，本系统提供IOS 和Android两种操作系统的测试环境。IOS操作系统提供两种测试类型，兼容测试和脚本测试。Android操作系统提供三种测试类型，兼容测试、脚本测试和遍历测试。详情参见“任务管理”章节。</p>
+                        <p class="paragraph">(1) 结果综述</p>
+                        <p class="paragraph">结果综述中包括任务基本信息、性能平均值和测试通过率。如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/analyze_report_1.jpg">
+                            <p class="imgname">测试报告-结果综述页面图</p>
+                        </div>
+                        <p class="paragraph_mul">a) 任务基本信息主要是展示任务名称、创建时间、开始时间和结束时间以及任务状态。任务状态报告五种：已创建、等待中、执行中、已完成和已取消。如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img  src="../images/img-CN/analyze_report_2.jpg">
+                            <p class="imgname">测试报告-任务基本信息图</p>
+                        </div>
+                        <p class="paragraph_mul">b) 性能平均值是对执行测试的所有设备统计其启动耗时、CPU、内存占用、流量以及电量消耗的数值，从而分析其性能详情。启动耗时是指设备启动安装的App消耗的时间；CPU占用是指测试App占用设备的CPU比例；内存占用是指测试App运行时占用的设备内存大小；流量是指在执行测试时，App占用的上行流量和下行流量；电量消耗是指运行测试App时设备损失的电量值。如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img  src="../images/img-CN/analyze_report_3.jpg">
+                            <p class="imgname">测试报告-性能平均值图</p>
+                        </div>
+                        <p class="paragraph_mul">c) 测试通过率是对兼容测试、脚本测试和遍历测试的测试结果以饼图的形式展示，使得更加清晰和直观地查看通过率。测试结果分为三种：成功、失败和未执行。成功是指App安装、运行和卸载三个阶段均成功；失败是指App在安装、运行和卸载三个阶段中任一阶段失败则统计为失败；未执行是指App在安装、运行和卸载阶段出现“未执行结果”。如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/analyze_report_4.jpg">
+                            <p class="imgname">测试报告-测试通过率图</p>
+                        </div>
+                        <p class="paragraph">(2) 兼容测试、脚本测试和遍历测试</p>
+                        <p class="paragraph">此模块主要对兼容测试、脚本测试和遍历测试进行详细的结果分析，记录其安装、启动、运行和卸载。当出现问题或者错误时，系统自动捕获其错误位置和错误原因。详情参见“测试报告”章节。</p>
+                        <p class="paragraph">(3) 性能报告</p>
+                        <p class="paragraph">性能报告是在设备执行测试阶段记录启动、CPU、内存、流量和电量等性能数据，统计最优和最差的性能值。性能报告帮助用户从性能方面分析其App，使得测试更加全面。如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/analyze_report_5.jpg">
+                            <p class="imgname">测试报告-性能报告图</p>
+                        </div>
+                        <p class="paragraph">(4) 终端列表</p>
+                        <p class="paragraph">终端列表是对所有执行测试的设备统计和分析测试信息，如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/analyze_report_6.jpg">
+                            <p class="imgname">测试报告-终端详情图</p>
+                        </div>
+                        <p class="paragraph">(5) 设备详情</p>
+                        <p class="paragraph">设备详情是对每部设备进行详细测试记录，包括设备安装、运行和卸载app的测试结果，app所消耗的性能值。用户可以通过截图、安装日志、logcat日志和录像查看测试过程，如下图所示。</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-CN/analyze_report_7.jpg">
+                            <p class="imgname">测试报告-设备详情图</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page -->

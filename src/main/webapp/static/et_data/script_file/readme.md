@@ -1,0 +1,1 @@
+## RobotFramework Scrip File Directory

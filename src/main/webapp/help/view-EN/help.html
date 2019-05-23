@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    <title>Help</title>
+    <link rel="shortcut icon" href="../../static/img/logo-img2.ico">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-extend.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/help-style.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../static/global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../../static/global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../../static/global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../../static/global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../../static/global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../../static/global/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="../../static/global/vendor/jquery-selective/jquery-selective.css">
+    <link rel="stylesheet" href="../../static/global/vendor/aspieprogress/asPieProgress.css">
+    <link rel="stylesheet" href="../../static/global/vendor/c3/c3.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../static/global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../../static/global/fonts/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="../../static/global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <!-- datatables beg -->
+    <link rel="stylesheet" href="../../static/global/vendor/datatables-bootstrap/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="../../static/global/vendor/datatables-fixedheader/dataTables.fixedHeader.css">
+    <link rel="stylesheet" href="../../static/global/vendor/datatables-responsive/dataTables.responsive.css">
+    <!-- datatables end -->
+    <!--[if lt IE 9]>
+    <script src="../../static/global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="../../static/global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../static/global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Scripts -->
+    <script src="../../static/global/vendor/breakpoints/breakpoints.js"></script>
+
+
+    <script>
+        Breakpoints();
+    </script>
+</head>
+<body class="animsition dashboard">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    <button type="button" id="btn_nav_menubar_s" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+            data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+    </button>
+
+    <div class="navbar-header">
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" >
+            <img class="navbar-brand-logo" src="../../static/img/logo-img.png" title="EagleTest">
+            <span class="navbar-brand-text hidden-xs-down">EagleTest</span>
+        </div>
+
+    </div>
+    <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+            <!-- Navbar Toolbar -->
+            <ul class="nav navbar-toolbar">
+                <li class="nav-item hidden-float" id="toggleMenubar">
+                    <a class="nav-link" id="btn_nav_menubar_l" data-toggle="menubar" href="#" role="button">
+                        <i class="icon hamburger web-menu">
+                            <span class="sr-only">Toggle menubar</span>
+                            <span class="hamburger-bar"></span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- End Navbar Toolbar -->
+
+            <!-- Navbar Toolbar Right -->
+            <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+
+
+                <!--<li class="nav-item hidden-sm-down" id="toggleFullscreen">
+                    <a class="nav-link icon icon-fullscreen" id="btn_fullScreen" data-toggle="fullscreen" href="#" role="button" title="全屏">
+                        <span class="sr-only">Toggle fullscreen</span>
+                    </a>
+                </li>-->
+                <li class="nav-item dropdown">
+                    &nbsp;&nbsp;
+                </li>
+            </ul>
+            <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+
+    </div>
+</nav>
+<div class="site-menubar">
+    <div id="site-body">
+        <ul class="site-menu" data-plugin="menu">
+            <li class="site-menu-category">Documentation</li>
+            <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                    <i class="site-menu-icon wb-hammer" aria-hidden="true"></i>
+                    <span class="site-menu-title">1. Features</span>
+                    <span class="site-menu-arrow"></span>
+                </a>
+                <ul class="site-menu-sub">
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <span class="site-menu-title">&nbsp;1.1 Functions</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="structure">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 Structure</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="permission">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.1.2 Permissions</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="workflow">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.1.3 Operation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <span class="site-menu-title">&nbsp;1.2 Login</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="login_as_admin">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 As Administrator</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="login_as_staff">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.2.2 As Staff</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <span class="site-menu-title">&nbsp;1.3 System</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="mobile_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.3.1 Moblie</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="project_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.3.2 Project</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="user_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.3.3 User</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="logs_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.3.4 Log</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="system_setting">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.3.5 Setting</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <span class="site-menu-title">&nbsp;1.4 Project Management</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="dashboard">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.4.1 Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="tasks_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.4.2 Tasks</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="versions_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.4.3 Versions</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="build_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.4.4 Builds</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="members_management">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.4.5 Members</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="#" name="report">
+                                    <span class="site-menu-title">&nbsp;&nbsp;&nbsp;&nbsp;1.4.6 Report</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="remote_test">
+                            <span class="site-menu-title">&nbsp;1.5 Remote Test</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="user_profile">
+                            <span class="site-menu-title">&nbsp;1.6 User Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                    <i class="site-menu-icon wb-sort-des" aria-hidden="true"></i>
+                    <span class="site-menu-title">2. Typical Scenario</span>
+                    <span class="site-menu-arrow"></span>
+                </a>
+                <ul class="site-menu-sub">
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="scenario">
+                            <span class="site-menu-title">&nbsp;2.1 Scenario</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="create_project">
+                            <span class="site-menu-title">&nbsp;2.2 Create Project</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="maintain_project">
+                            <span class="site-menu-title">&nbsp;2.3 Maintain project</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="task_review">
+                            <span class="site-menu-title">&nbsp;2.4 Task to Run/Review</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item">
+                        <a class="animsition-link" href="#" name="remote_test_detail">
+                            <span class="site-menu-title">&nbsp;2.5 Remote Test</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="site-menu-item">
+                <a class="animsition-link" href="#" name="Q&A">
+                    <i class="site-menu-icon wb-help" aria-hidden="true"></i>
+                    <span class="site-menu-title">3. Q&A</span>
+
+                </a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</div>
+
+<!-- Page -->
+<div class="page" id="page">
+    <div class="page-header p-t-10 p-b-10">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">EagleTest</li>
+            <li class="breadcrumb-item"><a href="help.html">Documentation</a></li>
+        </ol>
+    </div>
+    <div class="page-content">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+            <div class="col-lg-12 col-xxl-9 col-xs-12">
+                <div id="teamCompletedWidget" class="card card-shadow example-responsive">
+                    <div class="card-block p-x-100 p-y-20">
+                        <h3 class="title">Introduction</h3>
+                        <p class="paragraph">MTC (Mobile Testing Center), the industry leading mobile application testing public cloud service platform managed by Baidu, provides solutions for the cost, technology and efficiency issues faced by developers in mobile application testing. EagleTest box is based on Baidu MTC core technology to achieve the mobile application testing. Developers and testers can use real mobile devices for automated testing and real-world debugging. Connects to the server through a USB hub, each cloud platform supports up to 60 mobile devices and can be expanded.</p>
+                        <div class="imgcenter">
+                            <img class="imgbig" src="../images/img-EN/index.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page -->
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer-legal">© 2017 <a
+            href="#">Dilatoit</a></div>
+</footer>
+<!-- Core  -->
+<script src="../../static/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+<script src="../../static/global/vendor/jquery/jquery.js"></script>
+<script src="../../static/global/vendor/tether/tether.js"></script>
+<script src="../../static/global/vendor/bootstrap/bootstrap.js"></script>
+<script src="../../static/global/vendor/animsition/animsition.js"></script>
+<script src="../../static/global/vendor/mousewheel/jquery.mousewheel.js"></script>
+<script src="../../static/global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+<script src="../../static/global/vendor/asscrollable/jquery-asScrollable.js"></script>
+<script src="../../static/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+<!-- Plugins -->
+<script src="../../static/global/vendor/switchery/switchery.min.js"></script>
+<script src="../../static/global/vendor/intro-js/intro.js"></script>
+<script src="../../static/global/vendor/screenfull/screenfull.js"></script>
+<script src="../../static/global/vendor/slidepanel/jquery-slidePanel.js"></script>
+<script src="../../static/global/vendor/aspieprogress/jquery-asPieProgress.js"></script>
+<script src="../../static/global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+<script src="../../static/global/vendor/jquery-selective/jquery-selective.min.js"></script>
+<script src="../../static/global/vendor/d3/d3.min.js"></script>
+<script src="../../static/global/vendor/c3/c3.min.js"></script>
+<!-- Scripts -->
+
+<script src="../../static/global/js/State.js"></script>
+<script src="../../static/global/js/Component.js"></script>
+<script src="../../static/global/js/Plugin.js"></script>
+<script src="../../static/global/js/Base.js"></script>
+<script src="../../static/global/js/Config.js"></script>
+<script src="../../static/assets/js/Section/Menubar.js"></script>
+<script src="../../static/assets/js/Section/GridMenu.js"></script>
+<script src="../../static/assets/js/Section/Sidebar.js"></script>
+<script src="../../static/assets/js/Section/PageAside.js"></script>
+<script src="../../static/assets/js/Plugin/menu.js"></script>
+<script src="../../static/global/js/config/colors.js"></script>
+<script src="../../static/assets/js/config/tour.js"></script>
+<script>
+    Config.set('assets', '../../static/assets');
+</script>
+<!-- Page -->
+<script src="../../static/assets/js/Site.js"></script>
+<script src="../../static/global/js/Plugin/asscrollable.js"></script>
+<script src="../../static/global/js/Plugin/slidepanel.js"></script>
+<script src="../../static/global/js/Plugin/switchery.js"></script>
+<script src="../../static/global/js/Plugin/matchheight.js"></script>
+<script src="../../static/global/js/Plugin/aspieprogress.js"></script>
+<script src="../../static/global/js/Plugin/asscrollable.js"></script>
+
+<script src="../../static/global/js/Plugin/panel.js"></script>
+<script src="../js/help.js"></script>
+<script>
+    (function(document, window, $) {
+        'use strict';
+        var Site = window.Site;
+        $(document).ready(function() {
+            Site.run();
+        });
+    })(document, window, jQuery);
+</script>
+</body>
+</html>

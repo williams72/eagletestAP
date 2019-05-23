@@ -1,0 +1,85 @@
+
+<!-- Page -->
+
+    <div class="page-header p-t-10 p-b-10">
+        <!--<h1 class="page-title">Page Title</h1>-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">EagleTest</li>
+            <li class="breadcrumb-item"><a href="help.html">Documentation</a></li>
+            <li class="breadcrumb-item active">2.4 Task to Run/Review</li>
+        </ol>
+    </div>
+    <div class="page-content">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+            <div class="col-lg-12 col-xxl-9 col-xs-12">
+                <div id="teamCompletedWidget" class="card card-shadow example-responsive">
+                    <div class="card-block p-x-100 p-y-20">
+                        <h3 class="title">2.4 Task to Run/Review</h3>
+                        <p class="paragraph">It shows the process for the automated test as below:</p>
+                        <div class="imgcenter" >
+                            <img class="imgxsmall" src="../images/img-EN/task_review_1.jpg">
+                            <p class="imgname">Flow chart for Task to Run/Review</p>
+                        </div>
+                        <p class="paragraph">(1) Add Version</p>
+                        <p class="paragraph">Refer to Section "Versions" for operating procedures.</p>
+                        <p class="paragraph">(2) Add Build</p>
+                        <p class="paragraph">Refer to Section "Builds" for specific procedures.</p>
+                        <p class="paragraph">(3) Create Task</p>
+                        <p class="paragraph">Depending on project’s type (Android and IOS), the automated test provide different test. In Android projects, it provides compatibility test (Monkey, SmartMonkey), automated script test (Appium, Robotium and Uiautomator) and traversal test; IOS projects provide compatibility test (Monkey) and automated script test (Appium). </p>
+                        <p class="paragraph_mul">a) Project Manager (Project Member) logs in to the system and opens the project in "Project" page and click on the "Task" menu.</p>
+                        <p class="paragraph_mul">b) In Task page, click "Create Task". There are three steps: entry the basic information, select the mobiles and submit the task. Refer to Section "Tasks" for details.</p>
+                        <p class="paragraph">(4) Review Report</p>
+                        <p class="paragraph">When the task is completed, the user can view the task information and result in Task page. See Section "Tasks" for details.</p>
+                        <p class="paragraph">For the presentation and analysis of test reports, see sections "Report" and "Analyze Report".</p>
+                        <p class="paragraph">Users can perform automated tests according to business processes. They can perform compatibility, automated script and traversal test, quickly and efficiently get test reports, and reduce management costs for mobiles and builds. Automated test allows users to perform multiple tests, locates problems, and fix problems in a timely manner, so it shortens the product release cycle.</p>
+                        <p class="paragraph">The report provides users a comprehensive evaluation for App. For automated testing, the system provides IOS and Android environment. The IOS operating system provides compatibility testing and script testing. The Android operating system provides compatibility testing, script testing, and traversal testing. See Section "Tasks" for details.</p>
+                        <p class="paragraph_mul">a) Result Review</p>
+                        <p class="paragraph_mul">It includes the basic information, the performance average and the test pass rate.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_2.jpg">
+                            <p class="imgname">Result Review</p>
+                        </div>
+                        <p class="paragraph_mul_mul">i) The information is to show task name, creation time, start time and end time, and task status. Status has five: Created, Waiting, Executed, Completed, and Canceled.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_3.jpg">
+                            <p class="imgname">Task Information</p>
+                        </div>
+                        <p class="paragraph_mul_mul">ii) The performance average is the analysis of the performance details of all the mobiles. It includes startup, CPU, memory, flow, and power. Startup is time that mobile install App; CPU refers to the test App occupies the CPU proportion of equipment; memory refers to the test App runtime occupied by the size of the mobile memory; Flow is app occupied of the upstream flow and downstream flow; power refers to loss of electricity value.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_4.jpg">
+                            <p class="imgname">Average of Performance</p>
+                        </div>
+                        <p class="paragraph_mul_mul">iii) The test pass rate is a result of the compatibility test, automated script test and traversal test results in a pie chart, making it more clear and intuitive to view the pass rate. Success means that the install, launch and uninstall are successful; failure means that any stage of the install, launch, and uninstall is failure.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_5.jpg">
+                            <p class="imgname">Test pass rate</p>
+                        </div>
+                        <p class="paragraph_mul">b) Compatibility, Automated script and Traversal test</p>
+                        <p class="paragraph_mul">It performs detailed analysis of the compatibility, automated script and traversal test, and records its installation, startup, operation and uninstallation. When a problem or error occurs, the system automatically captures its wrong location and the cause of the error. Refer to Section "Report" for details.</p>
+                        <p class="paragraph_mul">This performs detailed analysis of the compatibility test, script test and traversal test, and records its install, startup, launch and uninstall. When a problem or error occurs, the system automatically captures its wrong location and the cause of the error. Refer to Section "Report" for details.</p>
+                        <p class="paragraph_mul">c)  Performance report</p>
+                        <p class="paragraph_mul">Performance reports are performance data recording start, CPU, memory, traffic, and power during the device execution test phase. Performance reports help users to analyze their App from the performance, making the test more comprehensive.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_6.png">
+                            <p class="imgname">Performance Report</p>
+                        </div>
+                        <p class="paragraph_mul">d)  Mobiles List</p>
+                        <p class="paragraph_mul">The mobiles list is the devices which execute task.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_7.jpg">
+                            <p class="imgname">Mobiles List</p>
+                        </div>
+                        <p class="paragraph_mul">e)  Mobile Report</p>
+                        <p class="paragraph_mul">The mobile report are a detailed test record of each device, including the performance of the device's install, launch and uninstall. User can view the test process through screenshots, install logs, logcat logs and video.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/task_review_8.jpg">
+                            <p class="imgname">Mobile Report</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page -->

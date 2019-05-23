@@ -1,0 +1,89 @@
+
+<!-- Page -->
+
+    <div class="page-header p-t-10 p-b-10">
+        <!--<h1 class="page-title">Page Title</h1>-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">EagleTest</li>
+            <li class="breadcrumb-item"><a href="help.html">Documentation</a></li>
+            <li class="breadcrumb-item active">1.4.2 Tasks Management</li>
+        </ol>
+    </div>
+    <div class="page-content">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+            <div class="col-lg-12 col-xxl-9 col-xs-12">
+                <div id="teamCompletedWidget" class="card card-shadow example-responsive">
+                    <div class="card-block p-x-100 p-y-20">
+                        <h3 class="title">1.4.2 Tasks Management</h3>
+                        <p class="paragraph">The task management provides the user to submit automated test tasks and display task information. In this function, the user can use the build to run mobile phone testing. When the test is completed, the user can view the task results and device information. </p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/tasks_management_1.jpg">
+                            <p class="imgname">Tasks Management</p>
+                        </div>
+                        <h3 class="title">1.4.2.1 Create Task</h3>
+                        <p class="paragraph">The user creates an automated test task that takes three steps, including completing the basic information, selecting the test model, and submitting the task.</p>
+                        <p class="paragraph_mul"><b class="bold">(1) Basic Information</b></p>
+                        <p class="paragraph_mul">The user entry the basic information for the automated test task, including the task name, selecting the build, pre-job settings, selecting the test type, setting the test conditions. Due to the different types of projects, the types of tests provided are different.</p>
+
+                            <div class="imgcenter" >
+                                <img src="../images/img-EN/tasks_management_2.jpg">
+                                <p class="imgname">Create tasks in Android Project </p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">a)</b> Pre-Job Setting: Allows user to do something before test task running, such as reboot or set the network simulation (2G, 3G, high packet loss rate and high latency) when create a task. The network simulation provides four kinds of network simulation environment (2G, 3G, high packet loss rate and high delay). The network simulation provides four kinds of network simulation environment (2G, 3G, high packet loss rate and high delay). The network simulation provides four kinds of network simulation environment (2G, 3G, high packet loss rate and high delay) Test the operation of App in different network environments.</p>
+                            <div class="imgcenter" >
+                                <img  src="../images/img-EN/tasks_management_3.jpg">
+                                <p class="imgname">Pre-Job setting for Android Project</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">b)</b> There are three test types for an Android project, they are Compatibility test (Monkey, SmartMonkey), Automated script test (Appium, Robotium and Uiautomator), and Traversal test.</p>
+                            <p class="paragraph_mul_title"><b class="bold">i)Compatibility Test</b></p>
+                            <p class="paragraph_mul_mul">Compatibility test refers to the selected mobiles on the test App installed, start, monkey, uninstall and other testing process. It provides users with the test results, screenshots, installation logs, logcat log, video and other records. It also captures start time, CPU, memory, flow, power and other performance data to help users find the problem.</p>
+                            <p class="paragraph_mul_mul">Compatibility test is divided into two sub-types of compatibility, one is General compatibility test, the other is Smart compatible test. General compatibility test is the implementation of Monkey test, all area (pages) will be clicked randomly, to ensure no server issue happened on all pages. Smart compatibility test is also the implementation of Monkey test with snapshot of each operation.</p>
+                            <P class="paragraph_mul_mul">The user can set the test duration and advanced settings (login user name and password) for compatible tests, as shown in Figure below.
+                            <div class="imgcenter" >
+                                <img class="imgbig" src="../images/img-EN/tasks_management_4.jpg">
+                                <p class="imgname">Compatibility Test for Android Project</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">ii) Automated Script Test</b></p>
+                            <p class="paragraph_mul_mul">Automated script tests provide users with customizable scripting files for App. Automated script test supports three test frameworks, including Appium, Robotium and Uiautomator. In order to ensure the accuracy of the test, different test frameworks need to upload their corresponding test scripts, as shown in Figure below.</p>
+                            <div class="imgcenter" >
+                                <img src="../images/img-EN/tasks_management_5.jpg">
+                                <p class="imgname">Automated Scrip Test for Android Project</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">iii)	Traversal Test</b></p>
+                            <p class="paragraph_mul_mul">Traversal test is based on certain principles and rules of the pages and components to create a tree structure. In accordance with the tree structure, it traverses all the original controls and pages for App, which covers a variety of path branches, traverses all the functional modules in all detectable pages to increase the coverage of test cases. Figure below sets the page for traversal test times for the user.</p>
+                            <div class="imgcenter" >
+                                <img  src="../images/img-EN/tasks_management_6.jpg">
+                                <p class="imgname">Test Android Project</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">c)</b> There are two test types in an IOS project, they are Compatibility test (Monkey) and Automated script test (Appium), as shown in Figure below.</p>
+                            <div class="imgcenter" >
+                                <img class="imgbig" src="../images/img-EN/tasks_management_7.jpg">
+                                <p class="imgname">Test Type for IOS Project</p>
+                            </div>
+                            <p class="paragraph_mul_title"><b class="bold">i) Compatibility Test</b></p>
+                            <p class="paragraph_mul_mul">Compatibility test refers to the selected mobiles on the test App installed, start, monkey, uninstall and other testing process. It provides users with the test results, screenshots, installation logs, logcat log, video and other records. It also captures start time, CPU, memory, flow, power and other performance data to help users find the problem.</p>
+                            <p class="paragraph_mul_title"><b class="bold">ii) Automated Script Test</b></p>
+                            <p class="paragraph_mul_mul">Automated script tests provide users with customizable script files that customizable features for App. The Appium framework is only available in the IOS project.</p>
+                        <p class="paragraph_mul"><b class="bold">(2) Select Mobiles</b></p>
+                        <p class="paragraph_mul">After completed the basic information, users can select mobiles. In this step, user can select the mobile in the mobile library as the carrier of the test task and perform the test task. Android project provides the mobiles whose operating system is Android; IOS project provides the mobiles whose operating system is IOS; As shown in Figures below.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/tasks_management_8.jpg">
+                            <p class="imgname">Select mobiles in Android Project</p>
+                        </div>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/tasks_management_9.jpg">
+                            <p class="imgname">Select mobiles in IOS Project</p>
+                        </div>
+                        <p class="paragraph_mul"><b class="bold">(3) Submit </b></p>
+                        <p class="paragraph_mul">After selecting mobiles, the server receives the test task and returns the submission result. When successfully submit, the basic information of the test task will be displayed; if it fails, the system will prompt the user to resubmit. Figure below for the submission of successful page design.</p>
+                        <div class="imgcenter" >
+                            <img class="imgbig" src="../images/img-EN/tasks_management_10.jpg">
+                            <p class="imgname">Submit task</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page -->

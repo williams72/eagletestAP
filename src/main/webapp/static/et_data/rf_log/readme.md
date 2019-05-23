@@ -1,0 +1,1 @@
+## RobotFramework Log File Directory
